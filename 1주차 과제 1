@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Exam01 {
+    
+
+    public static void main(String[] args) {
+
+        char startValue = Character.MIN_VALUE; // \u0000
+        char endValue = Character.MAX_VALUE; // \uFFFF
+        char koStart = '\uAC00';
+        char koEnd = '\uD7AF';
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("이름을 입력해주세요.\n");
+        String str = sc.nextLine();
+        int nameSize = str.length();
+        char firstName = str.charAt(0);
+        char secondName = str.charAt(1);
+        char finalName = str.charAt(2);
+        for (int i = 0; i < nameSize; i++) {
+            if (str.charAt(i) >= startValue && str.charAt(i) <= endValue) {
+                if( str.charAt(i) >= (int) koStart && str.charAt(i) <= (int) koEnd) {
+                    System.out.format("0x%4X ",(int)str.charAt(i));
+                }else{
+                    System.out.println("잘못된 값 입니다.");
+                }
+            }
+        }
+    }
+}
+
