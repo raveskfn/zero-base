@@ -1,0 +1,185 @@
+import java.nio.charset.StandardCharsets;
+import java.text.DecimalFormat;
+
+import javax.swing.plaf.basic.BasicBorders.SplitPaneBorder;
+
+public class Exam03 {
+    
+    public static void main(String[] args){
+
+        String speeches = "My fellow Koreans"
+        + "I am grateful to you all. I bow my head in deep appreciation for the choice"
+        + "of you, the people. Today, serving as President in the 19th presidential term of the"
+        + "Republic of Korea, I take the first step toward a new Korea. My shoulders are now"
+        + "burdened with heavy mandates entrusted to me by the people, and my heart is burning with enthusiasm to create the kind of country that we have never been able to"
+        + "live in before. My head is now filled with blueprints for ushering in a new world"
+        + "characterized by unity and coexistence."
+        + "The new Republic of Korea we are trying to build is the nation that those who"
+        + "came before us have consistently aspired to in the face of countless frustrations and"
+        + "defeats. It is the nation that our young people have longed for so ardently, in spite of"
+        + "many sacrifices and dedicated efforts. To build such a Republic of Korea, I declare"
+        + "before history and the people with a fearful but humble mind that I will faithfully"
+        + "fulfill my responsibilities and missions as President."
+        + "I offer my gratitude and sympathy from deep in my heart to the other presidential contenders. There is no winner or loser in this election. We are all partners"
+        + "who are required to lead the new Republic of Korea together. Now is the time to"
+        + "leave behind the heat of competition and move forward together hand in hand."
+        + "My fellow Koreans,"
+        + "We have gone through unprecedented political upheavals over the past few"
+        + "months. Politics was in disarray but our people were great. Even with the impeachment and arrest of the sitting President, our people paved a way forward for the"
+        + "Republic of Korea. They never got discouraged but instead turned the crisis into an"
+        + "opportunity, eventually opening the way to a new world today. The greatness of the"
+        + "Republic of Korea is the greatness of the people."
+        + "During this presidential election, our people made history again. A new"
+        + "President was elected through even support from all across the country. Starting"
+        + "today, I will become a president for everyone. Even those who did not support me"
+        + "are my people, and I will serve them all alike."
+        + "I dare to make a promise. This date—May 10, 2017—will go down in history"
+        + "as the beginning of the genuine unity of the people."
+        + "My fellow Koreans,"
+        + "Over the past several troubling months, many people asked whether this"
+        + "country can indeed be called a country. From this very question, I will make a new"
+        + "start as President. From today, I will become a president dedicated to building a"
+        + "country worthy of being called a country."
+        + "I will boldly break from the malpractices of old days. As President, I will take"
+        + "the lead in starting anew.First and foremost, I will strive to get rid of authoritarian practices in the "
+        +"presidency. When preparations are completed, I am going to leave Cheong Wa Dae "
+        +"to usher in an era of the presidential office in Gwanghwamun Square. There, my "
+        +"aides and I will put our heads together and have discussions. I will frequently engage "
+        +"in communication with the people. On key issues, I myself will hold press briefings. "
+        +"On my way home, I will drop by markets to talk freely with citizens I en-counter. Large public forums will be occasionally held at Gwanghwamun Square." 
+        +"The President's imperial power will be shared as much as possible. I will make sure "
+        +"that agencies that have great authority remain completely independent from poli-tics. There will be a system to keep these agencies in check so that none of them will "
+        +"be able to wield absolute power.";;
+
+        speeches = speeches.replace(" ", "").replace(",", "").replace(".", "").replace("-", "");
+        speeches = speeches.toLowerCase();
+        int aCount = 0;
+        int bCount = 0;
+        int cCount = 0;
+        int dCount = 0;
+        int eCount = 0;
+        int fCount = 0;
+        int gCount = 0;
+        int hCount = 0;
+        int iCount = 0;
+        int jCount = 0;
+        int kCount = 0;
+        int lCount = 0;
+        int mCount = 0;
+        int nCount = 0;
+        int oCount = 0;
+        int pCount = 0;
+        int qCount = 0;
+        int rCount = 0;
+        int sCount = 0;
+        int tCount = 0;
+        int uCount = 0;
+        int vCount = 0;
+        int wCount = 0;
+        int xCount = 0;
+        int yCount = 0;
+        int zCount = 0;
+
+        for(int j=0; j<speeches.length(); j++){
+            char c1 = speeches.charAt(j);
+            Character.getNumericValue(c1);
+            //speeches = speeches.toLowerCase();
+            if((char) c1 == 97){
+                aCount++;
+            }else if((char) c1 == 98){
+                bCount++;
+            }else if((char) c1 == 99){
+                cCount++;
+            }else if((char) c1 == 100){
+                dCount++;
+            }else if((char) c1 == 101){
+                eCount++;
+            }
+            else if((char) c1 == 102){
+                fCount++;
+            }
+            else if((char) c1 == 103){
+                gCount++;
+            }
+            else if((char) c1 == 104){
+                hCount++;
+            }
+            else if((char) c1 == 105){
+                iCount++;
+            }
+            else if((char) c1 == 106){
+                jCount++;
+            }
+            else if((char) c1 == 107){
+                kCount++;
+            }
+            else if((char) c1 == 108){
+                lCount++;
+            }
+            else if((char) c1 == 109){
+                mCount++;
+            }
+            else if((char) c1 == 110){
+                nCount++;
+            }
+            else if((char) c1 == 111){
+                oCount++;
+            }
+            else if((char) c1 == 112){
+                pCount++;
+            }
+            else if((char) c1 == 113){
+                qCount++;
+            }
+            else if((char) c1 == 114){
+                rCount++;
+            }
+            else if((char) c1 == 115){
+                sCount++;
+            }
+            else if((char) c1 == 116){
+                tCount++;
+            }else if((char) c1 == 117){
+                uCount++;
+            }else if((char) c1 == 118){
+                vCount++;
+            }else if((char) c1 == 119){
+                wCount++;
+            }else if((char) c1 == 120){
+                xCount++;
+            }else if((char) c1 == 121){
+                yCount++;
+            }else if((char) c1 == 122){
+                zCount++;
+            }
+            
+
+        }
+        System.out.printf("A:  %15s\n",+ aCount + "개 ,    " + (String.format("%.2f", (float)(int) aCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("B:  %15s\n",+ bCount + "개 ,    " + (String.format("%.2f", (float)(int) bCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("C:  %15s\n",+ cCount + "개 ,    " + (String.format("%.2f", (float)(int) cCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("D:  %15s\n",+ dCount + "개 ,    " + (String.format("%.2f", (float)(int) dCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("E:  %15s\n ",+ eCount + "개 ,    " + (String.format("%.2f", (float)(int) eCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("F:  %15s\n",+ fCount + "개 ,    " + (String.format("%.2f", (float)(int) fCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("G:  %15s\n",+ gCount + "개 ,    " + (String.format("%.2f", (float)(int) gCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("H:  %15s\n",+ hCount + "개 ,    " + (String.format("%.2f", (float)(int) hCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("I:  %15s\n",+ iCount + "개 ,    " + (String.format("%.2f", (float)(int) iCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("J:  %15s\n",+ jCount + "개 ,    " + (String.format("%.2f", (float)(int) jCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("K:  %15s\n",+ kCount + "개 ,    " + (String.format("%.2f", (float)(int) kCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("L:  %15s\n",+ lCount + "개 ,    " + (String.format("%.2f", (float)(int) lCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("M:  %15s\n",+ mCount + "개 ,    " + (String.format("%.2f", (float)(int) mCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("N:  %15s\n",+ nCount + "개 ,    " + (String.format("%.2f", (float)(int) nCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("O:  %15s\n",+ oCount + "개 ,    " + (String.format("%.2f", (float)(int) oCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("P:  %15s\n",+ pCount + "개 ,    " + (String.format("%.2f", (float)(int) pCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("Q:  %15s\n",+ qCount + "개 ,    " + (String.format("%.2f", (float)(int) qCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("R:  %15s\n",+ rCount + "개 ,    " + (String.format("%.2f", (float)(int) rCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("S:  %15s\n",+ sCount + "개 ,    " + (String.format("%.2f", (float)(int) sCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("T:  %15s\n",+ tCount + "개 ,    " + (String.format("%.2f", (float)(int) tCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("U:  %15s\n",+ uCount + "개 ,    " + (String.format("%.2f", (float)(int) uCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("V:  %15s\n",+ vCount + "개 ,    " + (String.format("%.2f", (float)(int) vCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("W:  %15s\n",+ wCount + "개 ,    " + (String.format("%.2f", (float)(int) wCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("X:  %15s\n",+ xCount + "개 ,    " + (String.format("%.2f", (float)(int) xCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("Y:  %15s\n",+ yCount + "개 ,    " + (String.format("%.2f", (float)(int) yCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("Z:  %15s\n",+ zCount + "개 ,    " + (String.format("%.2f", (float)(int) zCount / (float) speeches.length() * 100.0 ))+ "%");
+    }
+}
