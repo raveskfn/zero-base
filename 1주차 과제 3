@@ -1,7 +1,4 @@
 import java.nio.charset.StandardCharsets;
-import java.text.DecimalFormat;
-
-import javax.swing.plaf.basic.BasicBorders.SplitPaneBorder;
 
 public class Exam03 {
     
@@ -159,7 +156,7 @@ public class Exam03 {
         System.out.printf("B:  %15s\n",+ bCount + "개 ,    " + (String.format("%.2f", (float)(int) bCount / (float) speeches.length() * 100.0 ))+ "%");
         System.out.printf("C:  %15s\n",+ cCount + "개 ,    " + (String.format("%.2f", (float)(int) cCount / (float) speeches.length() * 100.0 ))+ "%");
         System.out.printf("D:  %15s\n",+ dCount + "개 ,    " + (String.format("%.2f", (float)(int) dCount / (float) speeches.length() * 100.0 ))+ "%");
-        System.out.printf("E:  %15s\n ",+ eCount + "개 ,    " + (String.format("%.2f", (float)(int) eCount / (float) speeches.length() * 100.0 ))+ "%");
+        System.out.printf("E:  %15s\n",+ eCount + "개 ,   " + (String.format("%.2f", (float)(int) eCount / (float) speeches.length() * 100.0 ))+ "%");
         System.out.printf("F:  %15s\n",+ fCount + "개 ,    " + (String.format("%.2f", (float)(int) fCount / (float) speeches.length() * 100.0 ))+ "%");
         System.out.printf("G:  %15s\n",+ gCount + "개 ,    " + (String.format("%.2f", (float)(int) gCount / (float) speeches.length() * 100.0 ))+ "%");
         System.out.printf("H:  %15s\n",+ hCount + "개 ,    " + (String.format("%.2f", (float)(int) hCount / (float) speeches.length() * 100.0 ))+ "%");
