@@ -1,0 +1,44 @@
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.*;
+
+public class getProperties {
+ public static void main(String args[]) {
+  System.setProperty("JavaTuning", "Zang");
+  Properties prop = System.getProperties();
+  Set key = prop.keySet();
+  Iterator it = key.iterator();
+  System.out.println("=======================================================");
+  
+  try {
+		  File file = new File("index.html");
+		  
+		  BufferedWriter Writer = new BufferedWriter(new FileWriter(file));
+		  Writer.write("<html>");
+		  Writer.write("<head>");
+
+		  Writer.write("<h2>자바 환경변수</h2>");
+		  Writer.write("\r\n\t <meta charset=\\\"UTF-8\\\"/>");
+		  Writer.write("\r\n\t <style>\r\n\t\t");
+		  Writer.write("table {border-collapse:collapse; width:100%; text-align:left;}");
+		  Writer.write("\r\n\t\t th,td{border:solid 1px #000;}");
+		  Writer.write("\r\n\t </style>\r\n</head>");
+		  Writer.write("\r\n <body><table>\r\n");
+		  Writer.write("\r\n\t\t<th> 키 </th><th>  </th>");
+		  
+		  while(it.hasNext()){
+			   String curKey = it.next().toString();
+			   System.out.format("%s=%s\n",curKey, prop.getProperty(curKey));
+			   Writer.write("\r\n\t\t<th>" + curKey + "</th><th>"+ prop.getProperty(curKey) +"</th></tr>");
+		  }
+		  Writer.write("</body>");
+		  Writer.write("</html>");
+		  Writer.close();
+	  }catch (IOException e){
+		  e.printStackTrace();
+	  }
+   }
+  
+ }
