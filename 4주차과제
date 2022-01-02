@@ -1,0 +1,52 @@
+public class pageNavi {
+	
+	public static void main(String[] args) {
+		
+		long totalCount = 127;
+		long pageIndex = 1;
+		long pageCountList = 10;
+		long totalPage = totalCount / pageCountList;
+		long startPage = ((pageIndex - 1) / pageCountList) * pageCountList + 1;
+		long endPage = startPage + pageCountList -1;
+		
+		if (totalCount % pageCountList > 0) {
+			totalPage++;
+		}
+		
+		if(totalPage < pageIndex) {
+			pageIndex = totalPage;
+		}
+		
+		for (pageIndex = 1; pageIndex <= totalPage; pageIndex++) {
+			for (long pCount = startPage; pCount <= endPage; pCount++) {
+				
+					if (pCount == pageIndex) {
+						System.out.print("<b> " + pCount + "</b>");
+					} else {
+						System.out.print(" " + pCount + " ");
+					}
+				
+			}	
+			if(pageIndex > startPage) {
+				System.out.println("[처음]"+startPage);
+			}
+			if(pageIndex > startPage) {
+				System.out.println("[이전]" + (pageIndex - 1));
+			}
+		
+			if(pageIndex < totalPage) {
+				System.out.println((pageIndex + 1) + "[다음]");
+			}
+		
+			if(endPage < totalPage) {
+				System.out.println(+ totalPage + "[끝]");
+			}
+			System.out.print("\r\n");
+			
+			//if(endPage < totalPage) {
+				//System.out.println("<a href='?page=" + totalPage + "'>[끝]</a>");
+			//}
+
+		}
+	}
+}
